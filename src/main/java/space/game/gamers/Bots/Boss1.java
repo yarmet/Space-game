@@ -1,27 +1,21 @@
 package space.game.gamers.Bots;
 
 import space.game.animation.ExplosionAnimations.ExplosionType2;
+import space.game.game.Display;
 import space.game.gamers.Player.Gamer;
 import space.game.guns.BotGun;
 import space.game.primary.GameObject;
 import space.game.primary.SpaceShip;
-import space.game.game.Display;
-import javax.imageio.ImageIO;
+import space.game.util.ImagesLoader;
+
 import java.awt.*;
-import java.io.IOException;
 
 public class Boss1 extends SpaceShip {
     public Boss1(int x, int y) {
         this.x = x;
         this.y = y;
         this.objectType = 1;
-
-        try {
-            this.image = ImageIO.read(this.getClass().getResourceAsStream("/bots/Boss.png"));
-        } catch (IOException var4) {
-            var4.printStackTrace();
-        }
-
+        this.image = ImagesLoader.BOSS.getImage();
         this.speed = 2.0D;
         this.health = 4000;
         this.weapon.addNewGuns(new BotGun(10000));

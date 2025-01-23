@@ -1,14 +1,14 @@
 package space.game.gamers.Bots;
 
 import space.game.animation.ExplosionAnimations.ExplosionType4;
+import space.game.game.Display;
 import space.game.gamers.Player.Gamer;
 import space.game.guns.BotGun;
 import space.game.primary.GameObject;
 import space.game.primary.SpaceShip;
-import space.game.game.Display;
-import javax.imageio.ImageIO;
+import space.game.util.ImagesLoader;
+
 import java.awt.*;
-import java.io.IOException;
 
 public class BotType3 extends SpaceShip {
     public BotType3(int x, int y) {
@@ -17,13 +17,7 @@ public class BotType3 extends SpaceShip {
         this.speed = 4.0D;
         this.health = 40;
         this.objectType = 1;
-
-        try {
-            this.image = ImageIO.read(this.getClass().getResourceAsStream("/bots/BotType3.png"));
-        } catch (IOException var4) {
-            var4.printStackTrace();
-        }
-
+        this.image = ImagesLoader.BOT_TYPE3.getImage();
         this.addnewGun(new BotGun(100));
         this.bodyArea = new Rectangle(x, y, this.image.getWidth(), this.image.getHeight());
     }

@@ -34,7 +34,7 @@ public class GunsInSpace extends MaterialObjects {
    }
 
    public void draw(Graphics2D g) {
-      g.drawImage(this.image, (int)this.x, (int)this.y, (ImageObserver)null);
+      g.drawImage(this.image, (int)this.x, (int)this.y, null);
    }
 
    public int getX() {

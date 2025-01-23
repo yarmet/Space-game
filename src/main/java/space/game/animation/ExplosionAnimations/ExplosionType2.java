@@ -2,6 +2,7 @@ package space.game.animation.ExplosionAnimations;
 
 
 import space.game.animation.AbstractAnimation;
+import space.game.util.ImagesLoader;
 
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -9,13 +10,7 @@ import javax.imageio.ImageIO;
 public class ExplosionType2 extends AbstractAnimation {
    public ExplosionType2(int x, int y) {
       super(x, y);
-
-      try {
-         this.animationFromFile = ImageIO.read(this.getClass().getResourceAsStream("/bum2.png"));
-      } catch (IOException var4) {
-         var4.printStackTrace();
-      }
-
+      this.animationFromFile = ImagesLoader.EXPLOSION_TYPE2.getImage();
       this.WIDTH = 96;
       this.HEIGHT = 96;
       this.MAX_X = 4;
