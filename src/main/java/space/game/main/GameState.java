@@ -1,4 +1,4 @@
-package space.game.game;
+package space.game.main;
 
 import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;

@@ -72,7 +72,7 @@ public abstract class GameObject {
    }
 
    public static GameObject getObject(int index) {
-      return (GameObject)objectList.get(index);
+      return objectList.get(index);
    }
 
    public Rectangle getBodyArea() {

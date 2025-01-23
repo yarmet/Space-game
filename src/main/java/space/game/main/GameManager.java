@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class GameManager {
-   ArrayList<space.game.game.GameState> gameState = new ArrayList();
+   ArrayList<space.game.main.GameState> gameState = new ArrayList();
    private int currentStage = 0;
 
    public GameManager() {

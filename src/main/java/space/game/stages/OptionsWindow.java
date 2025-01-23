@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import javax.imageio.ImageIO;
 
-public class OptionsWindow extends space.game.game.GameState {
+public class OptionsWindow extends space.game.main.GameState {
    private Font font;
    private BufferedImage image;
    private String[] infoText = new String[]{"Работают:  стрелки, WASD, Enter и ESC", "в самой игре добавлена мышка и space", "для переключения текущего вида боезапасов,", "нажми ESC для перехода обратно в меню"};

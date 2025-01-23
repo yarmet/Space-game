@@ -16,7 +16,7 @@ import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
 import java.util.Random;
 
-public class Stage1 extends space.game.game.GameState implements Runnable {
+public class Stage1 extends space.game.main.GameState implements Runnable {
    private Space space;
    space.game.main.ObjectManager objectManager = new space.game.main.ObjectManager();
    Random random = new Random();
