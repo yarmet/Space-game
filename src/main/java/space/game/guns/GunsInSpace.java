@@ -1,7 +1,7 @@
 package space.game.guns;
 
 import space.game.primary.MaterialObjects;
-
+import space.game.game.Display;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
@@ -26,7 +26,7 @@ public class GunsInSpace extends MaterialObjects {
    public void update() {
       this.x += this.dx;
       this.y += this.dy;
-      if (!space.game.game.Display.BATTLEFIELD.contains(this.x, this.y) || this.health <= 0) {
+      if (!Display.BATTLEFIELD.contains(this.x, this.y) || this.health <= 0) {
          this.destroy();
       }
 

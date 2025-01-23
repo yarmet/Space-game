@@ -5,6 +5,7 @@ import space.game.animation.GamerAnimation;
 import space.game.guns.GunType2;
 import space.game.primary.GameObject;
 import space.game.primary.SpaceShip;
+import space.game.game.Display;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -54,20 +55,20 @@ public class Gamer extends SpaceShip {
     }
 
     private void checkMove() {
-        if (this.x > (space.game.game.Display.BATTLEFIELD.width - this.image.getWidth())) {
-            this.x = (space.game.game.Display.BATTLEFIELD.width - this.image.getWidth());
+        if (this.x > (Display.BATTLEFIELD.width - this.image.getWidth())) {
+            this.x = (Display.BATTLEFIELD.width - this.image.getWidth());
         }
 
-        if (this.x < space.game.game.Display.BATTLEFIELD.x) {
-            this.x = space.game.game.Display.BATTLEFIELD.x;
+        if (this.x < Display.BATTLEFIELD.x) {
+            this.x = Display.BATTLEFIELD.x;
         }
 
-        if (this.y > (space.game.game.Display.BATTLEFIELD.height - this.image.getHeight())) {
-            this.y = (space.game.game.Display.BATTLEFIELD.height - this.image.getHeight());
+        if (this.y > (Display.BATTLEFIELD.height - this.image.getHeight())) {
+            this.y = (Display.BATTLEFIELD.height - this.image.getHeight());
         }
 
-        if (this.y < space.game.game.Display.BATTLEFIELD.y) {
-            this.y = space.game.game.Display.BATTLEFIELD.y;
+        if (this.y < Display.BATTLEFIELD.y) {
+            this.y = Display.BATTLEFIELD.y;
         }
 
     }

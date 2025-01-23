@@ -3,7 +3,7 @@ package space.game.stages;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
+import space.game.game.Display;
 import javax.imageio.ImageIO;
 
 public class Space {
@@ -31,8 +31,8 @@ public class Space {
 
    public void draw(Graphics2D g) {
       g.setColor(Color.DARK_GRAY);
-      g.drawImage(this.spaceLayer1, (int)this.spaceX, space.game.game.Display.BATTLEFIELD.y, null);
-      g.drawImage(this.spaceLayer2, (int)this.spaceX + 1280, space.game.game.Display.BATTLEFIELD.y, null);
-      g.fillRect(0, 0, space.game.game.Display.BATTLEFIELD.width, space.game.game.Display.BATTLEFIELD.y);
+      g.drawImage(this.spaceLayer1, (int)this.spaceX, Display.BATTLEFIELD.y, null);
+      g.drawImage(this.spaceLayer2, (int)this.spaceX + 1280, Display.BATTLEFIELD.y, null);
+      g.fillRect(0, 0, Display.BATTLEFIELD.width, Display.BATTLEFIELD.y);
    }
 }

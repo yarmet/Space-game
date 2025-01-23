@@ -5,7 +5,7 @@ import space.game.gamers.Player.Gamer;
 import space.game.guns.BotGun;
 import space.game.primary.GameObject;
 import space.game.primary.SpaceShip;
-
+import space.game.game.Display;
 import java.awt.Rectangle;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -33,7 +33,7 @@ public class BotType2 extends SpaceShip {
       this.bodyArea.setLocation((int)this.x, (int)this.y);
       if (GameObject.getObject(0) instanceof Gamer) {
          Gamer gamer = (Gamer)GameObject.getObject(0);
-         if (space.game.game.Display.BATTLEFIELD.contains(this.x, this.y)) {
+         if (Display.BATTLEFIELD.contains(this.x, this.y)) {
             this.weapon.shoot((int)this.x, (int)this.y, gamer.getX(), gamer.getY());
          }
       }

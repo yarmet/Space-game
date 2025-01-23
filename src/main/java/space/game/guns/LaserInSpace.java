@@ -2,7 +2,7 @@ package space.game.guns;
 
 import space.game.primary.GameObject;
 import space.game.primary.MaterialObjects;
-
+import space.game.game.Display;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.util.Iterator;
@@ -48,7 +48,7 @@ public class LaserInSpace extends GameObject {
          }
 
          g.drawImage(this.image, (int)this.x, (int)this.y, null);
-      } while(space.game.game.Display.BATTLEFIELD.contains(this.x, this.y) && this.health > 0);
+      } while(Display.BATTLEFIELD.contains(this.x, this.y) && this.health > 0);
 
       this.destroy();
    }

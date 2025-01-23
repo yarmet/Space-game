@@ -1,10 +1,10 @@
 package space.game.main;
 
 public class LogicThread implements Runnable {
-   space.game.main.GameManager manager;
+   GameManager manager;
    private int RUNSPEED = 60;
 
-   public LogicThread(space.game.main.GameManager manager) {
+   public LogicThread(GameManager manager) {
       this.manager = manager;
       this.RUNSPEED = 1000 / this.RUNSPEED;
       (new Thread(this)).start();
