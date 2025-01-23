@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public abstract class GameObject {
-   public static final int PLAYER = 0;
    private static List<GameObject> objectList = new CopyOnWriteArrayList();
    protected Rectangle bodyArea;
    protected BufferedImage image;

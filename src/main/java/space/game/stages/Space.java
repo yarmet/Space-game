@@ -31,8 +31,8 @@ public class Space {
 
    public void draw(Graphics2D g) {
       g.setColor(Color.DARK_GRAY);
-      g.drawImage(this.spaceLayer1, (int)this.spaceX, space.game.game.Display.BATTLEFIELD.y, (ImageObserver)null);
-      g.drawImage(this.spaceLayer2, (int)this.spaceX + 1280, space.game.game.Display.BATTLEFIELD.y, (ImageObserver)null);
+      g.drawImage(this.spaceLayer1, (int)this.spaceX, space.game.game.Display.BATTLEFIELD.y, null);
+      g.drawImage(this.spaceLayer2, (int)this.spaceX + 1280, space.game.game.Display.BATTLEFIELD.y, null);
       g.fillRect(0, 0, space.game.game.Display.BATTLEFIELD.width, space.game.game.Display.BATTLEFIELD.y);
    }
 }

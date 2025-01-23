@@ -18,8 +18,6 @@ public class Display extends JPanel implements Runnable, KeyListener, MouseListe
    space.game.main.GameManager gm;
    space.game.main.LogicThread logicThread;
    private Thread thread;
-   public static final int X = 1280;
-   public static final int Y = 745;
    public static Rectangle BATTLEFIELD = new Rectangle(0, 25, 1280, 745);
    private Graphics2D g;
    private BufferedImage image;

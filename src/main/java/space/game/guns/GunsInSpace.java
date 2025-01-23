@@ -14,10 +14,10 @@ public class GunsInSpace extends MaterialObjects {
       this.image = gunType.getImage();
       this.health = gunType.getHealth();
       this.objectType = gunType.getObjectType();
-      this.speed = (double)gunType.getSpeed();
-      this.x = (double)x1;
-      this.y = (double)y1;
-      double atan = Math.atan2((double)(x2 - x1), (double)(y2 - y1));
+      this.speed = gunType.getSpeed();
+      this.x = x1;
+      this.y = y1;
+      double atan = Math.atan2((x2 - x1), (y2 - y1));
       this.dy = this.speed * Math.cos(atan);
       this.dx = this.speed * Math.sin(atan);
       this.bodyArea = new Rectangle((int)this.x, (int)this.y, this.image.getWidth(), this.image.getHeight());

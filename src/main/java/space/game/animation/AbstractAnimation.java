@@ -18,8 +18,8 @@ public class AbstractAnimation extends GameObject {
    private long FPS_24 = 42L;
 
    public AbstractAnimation(int x, int y) {
-      this.x = (double)x;
-      this.y = (double)y;
+      this.x = x;
+      this.y = y;
    }
 
    public void update() {

@@ -12,8 +12,8 @@ import javax.imageio.ImageIO;
 
 public class BotType3 extends SpaceShip {
    public BotType3(int x, int y) {
-      this.x = (double)x;
-      this.y = (double)y;
+      this.x = x;
+      this.y = y;
       this.speed = 4.0D;
       this.health = 40;
       this.objectType = 1;

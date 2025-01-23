@@ -1,4 +1,4 @@
-package space.game.game;
+package space.game.main;
 
 import space.game.gamers.Player.Gamer;
 import space.game.primary.GameObject;

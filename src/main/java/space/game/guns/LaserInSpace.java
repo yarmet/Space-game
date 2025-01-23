@@ -5,7 +5,6 @@ import space.game.primary.MaterialObjects;
 
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.image.ImageObserver;
 import java.util.Iterator;
 
 public class LaserInSpace extends GameObject {
@@ -17,9 +16,9 @@ public class LaserInSpace extends GameObject {
       this.image = gunType.getImage();
       this.health = gunType.getHealth();
       this.objectType = gunType.getObjectType();
-      this.x = (double)x1;
-      this.y = (double)y1;
-      double atan = Math.atan2((double)(x2 - x1), (double)(y2 - y1));
+      this.x = x1;
+      this.y = y1;
+      double atan = Math.atan2((x2 - x1), (y2 - y1));
       this.dy = this.speed * Math.cos(atan);
       this.dx = this.speed * Math.sin(atan);
       this.bodyArea = new Rectangle((int)this.x, (int)this.y, this.image.getWidth(), this.image.getHeight());
@@ -48,7 +47,7 @@ public class LaserInSpace extends GameObject {
             }
          }
 
-         g.drawImage(this.image, (int)this.x, (int)this.y, (ImageObserver)null);
+         g.drawImage(this.image, (int)this.x, (int)this.y, null);
       } while(space.game.game.Display.BATTLEFIELD.contains(this.x, this.y) && this.health > 0);
 
       this.destroy();

@@ -19,7 +19,7 @@ public class Weapon {
    }
 
    public void shoot(int x, int y, int mouseX, int mouseY) {
-      GunLent gunLent = (GunLent)this.personalGuns.get(this.selectedGun);
+      GunLent gunLent = this.personalGuns.get(this.selectedGun);
       this.curentTime = System.currentTimeMillis();
       this.rapidityOfFire = gunLent.rapidityOfFire;
       if (this.curentTime - this.previousTime >= this.rapidityOfFire && gunLent.gunCount > 0) {
@@ -49,7 +49,7 @@ public class Weapon {
 
       int count;
       for(count = 0; count < this.personalGuns.size(); ++count) {
-         if (((GunLent)this.personalGuns.get(count)).getName().equals(newGun.getName())) {
+         if ((this.personalGuns.get(count)).getName().equals(newGun.getName())) {
             gunAlreadyExist = true;
             index = count;
             break;
@@ -57,7 +57,7 @@ public class Weapon {
       }
 
       if (gunAlreadyExist) {
-         count = ((GunLent)this.personalGuns.get(index)).getGunCount();
+         count = (this.personalGuns.get(index)).getGunCount();
          newGun.addMoreGuns(count);
          this.personalGuns.set(index, newGun);
       } else {
@@ -67,10 +67,10 @@ public class Weapon {
    }
 
    public int getCurentGunCount() {
-      return ((GunLent)this.personalGuns.get(this.selectedGun)).getGunCount();
+      return (this.personalGuns.get(this.selectedGun)).getGunCount();
    }
 
    public String getCurentGunName() {
-      return ((GunLent)this.personalGuns.get(this.selectedGun)).getName();
+      return (this.personalGuns.get(this.selectedGun)).getName();
    }
 }

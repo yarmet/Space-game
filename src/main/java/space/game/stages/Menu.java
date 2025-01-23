@@ -33,7 +33,7 @@ public class Menu extends space.game.game.GameState {
    }
 
    public void draw(Graphics2D g) {
-      g.drawImage(this.image, 0, 15, (ImageObserver)null);
+      g.drawImage(this.image, 0, 15, null);
       g.setFont(this.menuFont);
 
       for(int i = 0; i < this.menu.length; ++i) {

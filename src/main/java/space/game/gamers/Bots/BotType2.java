@@ -12,8 +12,8 @@ import javax.imageio.ImageIO;
 
 public class BotType2 extends SpaceShip {
    public BotType2(int x, int y) {
-      this.x = (double)x;
-      this.y = (double)y;
+      this.x = x;
+      this.y = y;
 
       try {
          this.image = ImageIO.read(this.getClass().getResourceAsStream("/bots/BotType2.png"));

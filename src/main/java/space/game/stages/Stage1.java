@@ -18,7 +18,7 @@ import java.util.Random;
 
 public class Stage1 extends space.game.game.GameState implements Runnable {
    private Space space;
-   space.game.game.ObjectManager objectManager = new space.game.game.ObjectManager();
+   space.game.main.ObjectManager objectManager = new space.game.main.ObjectManager();
    Random random = new Random();
    Font font = new Font("TimesRoman", 0, 100);
    Boss1 boss1 = new Boss1(1300, 300);
@@ -91,19 +91,19 @@ public class Stage1 extends space.game.game.GameState implements Runnable {
    public void addRandomEquipment() {
       int t = this.random.nextInt(4);
       if (t == 0) {
-         GameObject.addObject(new HealthBox(1300.0D, (double)(50 + this.random.nextInt(600))));
+         GameObject.addObject(new HealthBox(1300.0D, (50 + this.random.nextInt(600))));
       }
 
       if (t == 1) {
-         GameObject.addObject(new GunType1Box(1300.0D, (double)(50 + this.random.nextInt(600))));
+         GameObject.addObject(new GunType1Box(1300.0D, (50 + this.random.nextInt(600))));
       }
 
       if (t == 2) {
-         GameObject.addObject(new GunType2Box(1300.0D, (double)(50 + this.random.nextInt(600))));
+         GameObject.addObject(new GunType2Box(1300.0D, (50 + this.random.nextInt(600))));
       }
 
       if (t == 3) {
-         GameObject.addObject(new LaserBox(1300.0D, (double)(50 + this.random.nextInt(600))));
+         GameObject.addObject(new LaserBox(1300.0D, (50 + this.random.nextInt(600))));
       }
 
    }
