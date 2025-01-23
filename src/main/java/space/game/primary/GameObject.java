@@ -5,7 +5,6 @@ import space.game.gamers.Player.Gamer;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -109,7 +108,7 @@ public abstract class GameObject {
    }
 
    public void draw(Graphics2D g) {
-      g.drawImage(this.image, (int)this.x, (int)this.y, (ImageObserver)null);
+      g.drawImage(this.image, (int)this.x, (int)this.y, null);
    }
 
    static {

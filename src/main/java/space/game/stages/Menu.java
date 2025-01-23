@@ -1,5 +1,7 @@
 package space.game.stages;
 
+import space.game.main.GameState;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -7,7 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
-public class Menu extends space.game.main.GameState {
+public class Menu extends GameState {
    private Font menuFont;
    private BufferedImage image;
    private String[] menu = new String[]{"начать", "управление", "выйти"};

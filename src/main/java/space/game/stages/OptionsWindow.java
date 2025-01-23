@@ -32,7 +32,7 @@ public class OptionsWindow extends space.game.main.GameState {
    }
 
    public void draw(Graphics2D g) {
-      g.drawImage(this.image, 0, 15, (ImageObserver)null);
+      g.drawImage(this.image, 0, 15, null);
       g.setFont(this.font);
       g.setColor(Color.RED);
 

@@ -1,5 +1,8 @@
 package space.game.game;
 
+import space.game.main.GameManager;
+import space.game.main.LogicThread;
+
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -47,8 +50,8 @@ public class Display extends JPanel implements Runnable, KeyListener, MouseListe
       this.image = new BufferedImage(1280, 745, 1);
       this.g = (Graphics2D)this.image.getGraphics();
       running = true;
-      this.gm = new space.game.main.GameManager();
-      this.logicThread = new space.game.main.LogicThread(this.gm);
+      this.gm = new GameManager();
+      this.logicThread = new LogicThread(this.gm);
    }
 
    public void run() {
