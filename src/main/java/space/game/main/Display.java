@@ -6,8 +6,8 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
 public class Display extends JPanel implements Runnable, KeyListener, MouseListener, MouseMotionListener {
-    space.game.main.GameManager gm;
-    space.game.main.LogicThread logicThread;
+    GameManager gm;
+    LogicThread logicThread;
     private Thread thread;
     public static Rectangle BATTLEFIELD = new Rectangle(0, 25, 1280, 745);
     private Graphics2D g;
