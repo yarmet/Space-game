@@ -3,7 +3,7 @@ package space.game.stages;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import space.game.game.Display;
+import space.game.main.Display;
 import javax.imageio.ImageIO;
 
 public class Space {

@@ -5,7 +5,7 @@ import space.game.animation.GamerAnimation;
 import space.game.guns.GunType2;
 import space.game.primary.GameObject;
 import space.game.primary.SpaceShip;
-import space.game.game.Display;
+import space.game.main.Display;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;

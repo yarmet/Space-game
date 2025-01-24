@@ -1,7 +1,7 @@
 package space.game.gamers.Bots;
 
 import space.game.animation.ExplosionAnimations.ExplosionType4;
-import space.game.game.Display;
+import space.game.main.Display;
 import space.game.gamers.Player.Gamer;
 import space.game.guns.BotGun;
 import space.game.primary.GameObject;

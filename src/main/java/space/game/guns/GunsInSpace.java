@@ -1,10 +1,10 @@
 package space.game.guns;
 
 import space.game.primary.MaterialObjects;
-import space.game.game.Display;
+import space.game.main.Display;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.image.ImageObserver;
+
 
 public class GunsInSpace extends MaterialObjects {
    double dx;
